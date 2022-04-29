@@ -2539,7 +2539,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
           font-size: 50px;
           line-height: 105px;
           margin-bottom: 22px;
-          background-image: url(../img/icon-bg.png);
+          background-image: url(./icon-bg.png);
           background-position: center;
           background-repeat: no-repeat;
           color: #fff;
@@ -2574,7 +2574,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     z-index: -1; }
 
 .list-feature-bg {
-  background-image: url(../img/bg/list-feature-bg-2.png);
+  background-image: url(list-feature-bg-2.png);
   background-size: cover;
   background-position: left; }
 
@@ -2984,9 +2984,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     Intro Video 
 ------------------------*/
 .intro-video-area {
-  padding: 150px 0 130px 0; }
+  padding: 150px 0 100px 0; }
   .intro-video-area.intro-video-bg {
-    background-image: url(../img/bg/intro-bg.jpg);
+    background-image: url(intro-bg.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -3097,7 +3097,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     Testimonial Area
 ----------------------------*/
 .testimonial-area.testimonial-bg {
-  background-image: url(../img/bg/testimonial-bg.png);
+  background-image: url(testimonial-bg.png);
   background-size: cover;
   background-position: center; }
 
@@ -3232,7 +3232,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     Contact Area
 ----------------------*/
 .contact-area.contact-bg {
-  background-image: url(../img/bg/contact.jpg);
+  background-image: url(contact.jpg);
   background-image: cover;
   background-position: cover; }
 
@@ -3283,7 +3283,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .contact-form .form-group .form-control {
   height: 50px;
   padding: 0 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem !important;
+}
   .contact-form .form-group .form-control::-webkit-input-placeholder {
     /* WebKit browsers */
     color: #7f7c96; }
@@ -3766,3 +3768,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-weight: 600;
     font-size: 14px;
     line-height: 50px; }
+
+  .contact-info-area .title{
+    margin: 0 !important;
+  }
