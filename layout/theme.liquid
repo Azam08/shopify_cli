@@ -36,10 +36,7 @@
       content_for_header
     }}
 
-    {% assign body_font_bold = settings.type_body_font | font_modify: 'weight',
-    'bold' assign body_font_italic = settings.type_body_font | font_modify:
-    'style', 'italic' assign body_font_bold_italic = body_font_bold |
-    font_modify: 'style', 'italic' %} {% style %}
+    {% assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold' | font_modify: 'style', 'italic' | font_modify: 'style', 'italic' %} {% style %}
     {{
       settings.type_body_font | font_face: font_display:"swap"
     }}
@@ -499,3 +496,18 @@
     {%- endif -%}
   </body>
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% assign body_font_bold = settings.type_body_font | font_modify: 'weight',
+        'bold' assign body_font_italic = settings.type_body_font | font_modify:
+        'style', 'italic' assign body_font_bold_italic = body_font_bold |
+        font_modify: 'style', 'italic' %}
+  to: "{% assign body_font_bold = settings.type_body_font | font_modify: 'weight',
+    'bold' | font_modify: 'style', 'italic' | font_modify: 'style', 'italic' %}"
+  position: 1371..1522
+{% endcomment %}
